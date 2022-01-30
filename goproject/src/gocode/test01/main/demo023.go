@@ -46,8 +46,8 @@ func main() {
 	b := B{A: A{name: "A", age: 10}, c: &C{name: "C"}, name: "B"}
 	fmt.Println(b)
 	fmt.Println(b.name) //就近使用 输出B
-	fmt.Println(b.age)  //等价于 b.A.age
-	fmt.Println(b.age)  //等价于 b.A.age
+	fmt.Println(b.A.name)
+	fmt.Println(b.age) //等价于 b.A.age
 	fmt.Println(*(b.c))
 	b.c.paXing()
 	b.eat()
