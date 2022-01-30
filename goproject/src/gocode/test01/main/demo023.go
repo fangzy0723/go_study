@@ -47,6 +47,7 @@ func main() {
 	fmt.Println(b)
 	fmt.Println(b.name) //就近使用 输出B
 	fmt.Println(b.age)  //等价于 b.A.age
+	fmt.Println(b.age)  //等价于 b.A.age
 	fmt.Println(*(b.c))
 	b.c.paXing()
 	b.eat()
